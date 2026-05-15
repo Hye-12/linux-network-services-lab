@@ -103,3 +103,29 @@ vi /etc/dhcp/dhcpd.conf
 ```bash id="h0m8z7"
 systemctl restart dhcpd
 ```
+```
+[root@rocky9-3 ~]# systemctl status dhcpd
+● dhcpd.service - DHCPv4 Server Daemon
+     Loaded: loaded (/usr/lib/systemd/system/dhcpd.service; enabled; preset: disabled)
+     Active: active (running) since Fri 2026-05-15 16:31:25 KST; 7s ago
+       Docs: man:dhcpd(8)
+             man:dhcpd.conf(5)
+   Main PID: 1075 (dhcpd)
+     Status: "Dispatching packets..."
+      Tasks: 1 (limit: 12120)
+     Memory: 5.1M
+        CPU: 7ms
+     CGroup: /system.slice/dhcpd.service
+             └─1075 /usr/sbin/dhcpd -f -cf /etc/dhcp/dhcpd.conf -user dhcpd -group dhcpd --no-pid
+
+May 15 16:31:25 rocky9-3 dhcpd[1075]: PID file: /var/run/dhcpd.pid
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Source compiled to use binary-leases
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Wrote 0 deleted host decls to leases file.
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Wrote 0 new dynamic host decls to leases file.
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Wrote 1 leases to leases file.
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Listening on LPF/ens160/00:0c:29:9c:b0:9a/10.0.0.0/24
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Sending on   LPF/ens160/00:0c:29:9c:b0:9a/10.0.0.0/24
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Sending on   Socket/fallback/fallback-net
+May 15 16:31:25 rocky9-3 dhcpd[1075]: Server starting service.
+May 15 16:31:25 rocky9-3 systemd[1]: Started DHCPv4 Server Daemon.
+```
