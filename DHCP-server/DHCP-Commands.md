@@ -8,6 +8,9 @@ dnf install -y dhcp-server
 
 ## DHCP 설정파일 수정
 세부 설정: `DHCP-Server/dhcpd.conf`
+`/usr/share/doc/dhcp-server/dhcpd.conf.example` 의 기초 내용을 복사 후 수정 필요
+':$r /usr/share/doc/dhcp-server/dhcpd.conf.example' 명령문으로 샘플내용 복사 후 수정 진행
+
 
 ```bash
 vi /etc/dhcp/dhcpd.conf
