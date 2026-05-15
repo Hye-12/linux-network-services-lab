@@ -2,8 +2,8 @@
 Rocky Linux 기반 네트워크 서비스 구축 실습 저장소
 
 ## Labs
-- DHCP Server
-
+- DHCP Server (10.0.0.13)
+- FTP Server  (10.0.0.11)
 
 ## Environment
 - Rocky Linux 9
