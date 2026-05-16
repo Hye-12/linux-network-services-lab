@@ -11,6 +11,7 @@ dnf install -y vsftpd
 ```bash id="0hx9q6"
 vi /etc/vsftpd/vsftpd.conf
 ```
+세부설정파일
 
 ## VSFTPD 서비스 실행
 
