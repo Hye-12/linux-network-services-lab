@@ -3,7 +3,7 @@
 ## BIND DNS Server 설치
 
 ```bash
-dnf install -y bind bind-utils
+dnf install -y bind bind-utils bind-libs
 ```
 
 ## named 설정파일 수정
