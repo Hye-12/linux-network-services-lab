@@ -54,7 +54,8 @@ named-checkzone hye12.local /var/named/forward.zone
 named-checkzone 0.0.10.in-addr.arpa /var/named/reverse.zone
 ```
 ## Forward Zone, Reverse Zone 권한 수정
-```chmod 640 /var/named/{forward_zone,reverse_zone}
+```
+chmod 640 /var/named/{forward_zone,reverse_zone}
 named 서비스가 zone 파일을 읽을 수 있도록 권한 수정
 ```
 
