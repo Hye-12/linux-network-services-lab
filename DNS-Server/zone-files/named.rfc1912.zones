@@ -48,8 +48,8 @@ zone "hye12.local" IN {
         file "forward.zone";
         allow-transfer { 10.0.0.11; 10.0.0.13; };
 };
-zone "0.0.10.in-addr.arpa" IN {
+zone "0.0.10.in-addr_arpa" IN {
         type master; 
-        file "reverse.zone";
+        file "reverse_zone";
         allow-transfer { 10.0.0.11; 10.0.0.13; };
 };
