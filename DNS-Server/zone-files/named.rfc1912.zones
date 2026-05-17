@@ -45,7 +45,7 @@ zone "0.in-addr.arpa" IN {
 };
 zone "hye12.local" IN {
         type master; 
-        file "forward.zone";
+        file "forward_zone";
         allow-transfer { 10.0.0.11; 10.0.0.13; };
 };
 zone "0.0.10.in-addr_arpa" IN {
