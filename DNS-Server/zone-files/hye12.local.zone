@@ -1,0 +1,38 @@
+$TTL 1D
+@       IN SOA  ns1.hye12.local. web. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+        NS      ns1.hye12.local.
+        NS      ns2.hye12.local.
+        NS      ns3.hye12.local.
+        MX 10   mx1.hye12.local.
+
+        A       10.0.0.11
+        A       10.0.0.12
+        A       10.0.0.13
+
+www     A       10.0.0.11
+www     A       10.0.0.12
+www     A       10.0.0.13
+  
+; Name Server        
+ns2     A       10.0.0.11
+ns1     A       10.0.0.12
+ns3     A       10.0.0.13
+
+; Blog Web Server
+blog    A       10.0.0.11
+blog    A       10.0.0.12
+
+; Internal Web Server
+intra   A       10.0.0.12
+intra   A       10.0.0.13
+
+; FTP Server  
+ftp     A       10.0.0.11
+
+; Mail Server
+mx1     A       10.0.0.13
